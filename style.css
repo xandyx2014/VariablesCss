@@ -1,4 +1,21 @@
-body{
+/*
+La variable es un espacio en almacena un valor
+Este valor puede ser recuperado 
+*/
+
+:root{
     --color:red;
-    background:var(--color);
+    --link-color:orange;
+    --bg-color:yellow;
 }
+html{
+    background:var(--bg-color);
+}
+
+p{
+    color:var(--color);
+}
+a{
+    color:var(--link-color);
+}
+

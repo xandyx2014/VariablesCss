@@ -1,0 +1,30 @@
+*,::before,::after{
+    box-sizing: border-box;
+}
+:root {
+    --font-size:2em;
+    --column-size:100%;
+    --column-paddins:2em;
+}
+h1 {
+    font-size: var(--font-size);
+    text-align: center;
+}
+.row {
+    display:flex;
+    flex-wrap: wrap;
+}
+.column {
+    width: var(--column-size);
+    padding-left: var(--column-paddins);
+    padding-right: var(--column-paddins);
+
+}
+@media screen and (min-width: 1024px){
+    h1 {
+        --font-size:5em;
+    }
+    .column {
+        --column-size:33.33%;
+    }
+}

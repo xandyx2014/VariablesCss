@@ -1,0 +1,15 @@
+/*SCOPE CSS
+Tiene scope de DOM ..no de bloque.......
+*/
+:root{
+    --main-color:blue;
+}
+h1{
+    color:var(--main-color);
+}
+p{
+    color:var(--color);
+}
+body{
+    --color:red;
+}

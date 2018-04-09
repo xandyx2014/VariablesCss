@@ -1,0 +1,34 @@
+:root{
+    --main-color:blue;
+    --font-size:2em;
+    --opacity:1;
+}
+[class*=button]{
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    border: none;
+    margin: 1em;
+    color:#fff;
+    transition: all 1s ease;
+    opacity: var(--opacity);
+    font-size: var(--font-size);
+    background-color: var(--main-color);
+}
+.button--alert{
+    --main-color:red;
+}
+[class*=button]:hover{
+    --opacity:.5;
+}
+.button--cta{
+    --main-color:yellow;
+}
+.button--small{
+    --font-size:.8em;
+    --main-color:green;
+}
+.button--big{
+    --font-size:3em;
+    --main-color:orange;
+}
